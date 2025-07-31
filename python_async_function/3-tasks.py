@@ -10,7 +10,9 @@ import asyncio
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-def task_wait_random(max_delay: int):
+def task_wait_random(max_delay: int = 10) -> asyncio.Task:
+    # Le int = 10  une convention de cohérence, pour que si l’utilisateur
+    # oublie l’argument, ça fonctionne quand même.
     """
         function that takes an integer max_delay and returns a asyncio.Task.
     """
