@@ -10,7 +10,7 @@ async def async_generator():
     1 second, then yield a random number between 0 and 10.
     Use the random module.
     """
-    for i in range(10):
+    for i in range(0, 10):
         await asyncio.sleep(1)
         yield random.uniform(0, 10)
 # Renvoie un nombre flottant aléatoire entre deux paramètres donnés
