@@ -4,6 +4,7 @@ import csv
 import math
 from typing import List
 
+
 def index_range(page: int, page_size: int) -> List[int]:
     """
     function named index_range that takes two
@@ -42,7 +43,7 @@ class Server:
         if debut >= len(dataset):
             return []
         return dataset[debut:fin]
-    
+
     def get_hyper(self, page: int = 1, page_size: int = 10) -> List[List]:
         total_items = len(self.dataset())
         total_pages = math.ceil(total_items / page_size)
