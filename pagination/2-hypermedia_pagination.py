@@ -45,6 +45,7 @@ class Server:
         return dataset[debut:fin]
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> List[List]:
+        """ Hypermedia pagination """
         total_items = len(self.dataset())
         total_pages = math.ceil(total_items / page_size)
         # la fonction math.ceil permet d'arrondir vers le haut à l'entier
