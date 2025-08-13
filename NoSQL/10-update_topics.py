@@ -13,5 +13,3 @@ def update_topics(mongo_collection, name, topics):
         {"name": name},
         {"$set": {"topics": topics}}
     )
-    return result.modified_count
-# modified.count permet de voir le nombre de documents modifiés
