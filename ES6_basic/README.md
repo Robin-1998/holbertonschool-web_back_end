@@ -13,3 +13,7 @@ ES6 Basics
 10. For...of Loops
 11. Iterator
 12. Let's create a report object
+
+npx eslint 1-block-scoped.js pour lancer l'analyse ESlint
+
+npm test pour lancer les test
