@@ -1,12 +1,8 @@
 const http = require('http');
 
 const app = http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.writeHead(200, { 'Content-Type': 'text/html' });
   res.end('Hello Holberton School!');
-});
-
-const PORT = 1245;
-
-app.listen(PORT);
+}).listen(1245);
 
 module.exports = app;
