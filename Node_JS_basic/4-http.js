@@ -5,7 +5,4 @@ const app = http.createServer((req, res) => {
   res.end('Hello Holberton School!');
 });
 
-const PORT = 1245;
-const HOST = 'localhost';
-
-app.listen(PORT, HOST);
+app.listen(PORT=1245);
