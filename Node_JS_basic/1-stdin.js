@@ -1,16 +1,10 @@
-console.log('Welcome to Holberton School, what is your name?');
+process.stdout.write('Welcome to Holberton School, what is your name?\n');
 // display a message
 
-// Active la lecture de l'entrée standard (le clavier)
-process.stdin.resume();
-
-// Pour convertir automatiquement en chaîne
-process.stdin.setEncoding('utf8');
 process.stdin.on('data', (data) => {
-  const name = data.trim(); // Retire le retour à la ligne automatique
+  process.stdout.write(`Your name is: ${data}`);
+});
 
-  console.log(`Your name is: ${name}`);
-  console.log('This important software is now closing');
-
-  process.exit();
+process.stdin.on('end',() => {
+process.stdout.write('This important software is now closing\n');
 });
