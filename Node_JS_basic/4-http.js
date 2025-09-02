@@ -5,4 +5,4 @@ const app = http.createServer((req, res) => {
   res.end('Hello Holberton School!');
 });
 
-app.listen(PORT=1245);
+app.listen(1245);
